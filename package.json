@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch",
     "test": "nightwatch"
   },
   "keywords": [],
