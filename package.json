@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch",
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "chromedriver": "^2.46.0",
     "eslint": "^5.15.1",
     "nightwatch": "^1.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
   }
 }
