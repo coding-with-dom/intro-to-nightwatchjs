@@ -7,7 +7,9 @@
     "lint": "eslint .",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch",
     "test": "nightwatch",
-    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js"
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
+    "test:vrt": "nightwatch -c nightwatch.vrt.conf.js",
+    "consolidate:vrt": "CONSOLIDATE=1 npm run test:vrt"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "nightwatch": "^1.0.19"
   },
   "dependencies": {
-    "dotenv": "^7.0.0"
+    "dotenv": "^7.0.0",
+    "nightwatch-vrt": "^0.2.9"
   }
 }
